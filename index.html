@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simple Image Slider</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="slider" aria-label="Слайдер изображений">
+      <button class="slider__btn slider__btn--prev" id="prevBtn" aria-label="Предыдущее изображение">◀️</button>
+
+      <div class="slider__viewport">
+        <!-- Обёртка для изображений; img с классом "slide" будут менять видимость -->
+        <img class="slide" id="slideImage" src="images/img1.jpg" alt="Слайд 1" loading="lazy" />
+      </div>
+
+      <button class="slider__btn slider__btn--next" id="nextBtn" aria-label="Следующее изображение">▶️</button>
+
+      <div class="slider__footer">
+        <div class="slider__counter" id="counter">Изображение 1 из 5</div>
+        <div class="slider__dots" id="dots" role="tablist" aria-label="Навигация по слайдам"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
